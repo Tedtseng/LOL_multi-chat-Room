@@ -41,7 +41,7 @@ Description:
 >
 >![github](https://github.com/Tedtseng/LOL_multi-chat-Room/blob/master/pic/04.png "04")
 >
->Finally,you cam see Your code is running at the link such as "https://lol-tedtseng.c9users.io."
+>Finally,you can see your code is running at the link such as "https://lol-tedtseng.c9users.io."
 >
 >![github](https://github.com/Tedtseng/LOL_multi-chat-Room/blob/master/pic/05.png "05")
 >
