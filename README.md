@@ -12,7 +12,8 @@ Description:
 ### How to run online version: LOL chat room-Link
 >###step1.
 >
->Register Cloud9 website, sign in with your Github account
+>Register Cloud9 website,and sign in with your Github account
+>Clone my file [https://github.com/Tedtseng/LOL_multi-chat-Room.git](https://github.com/Tedtseng/LOL_multi-chat-Room.git)
 >
 >[Cloud9](https://c9.io/?redirect=0)
 >![github](https://github.com/Tedtseng/LOL_multi-chat-Room/blob/master/pic/01.png "01")
