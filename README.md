@@ -8,3 +8,11 @@ Description:
 >![github](https://github.com/Tedtseng/LOL_multi-chat-Room/blob/master/pic/00.png "00")
 >![github](https://github.com/Tedtseng/LOL_multi-chat-Room/blob/master/pic/00.2.png "00.2")
 >![github](https://github.com/Tedtseng/LOL_multi-chat-Room/blob/master/pic/00.3.png "00.3")
+
+### How to run online version: LOL chat room-Link
+>###step1.
+>
+>Register Cloud9 website, sign in with your Github account
+>
+>[Cloud9](https://c9.io/?redirect=0)
+>![github](https://github.com/Tedtseng/LOL_multi-chat-Room/blob/master/pic/01.png "01")
