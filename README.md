@@ -19,7 +19,7 @@ Description:
 >![github](https://github.com/Tedtseng/LOL_multi-chat-Room/blob/master/pic/01.png "01")
 
 ###Step2.
->After your signin with github account in Cloud9.com, you will see this page.
+>After your signin with Gthub account in Cloud9.com, you will see this page.
 >
 >![github](https://github.com/Tedtseng/LOL_multi-chat-Room/blob/master/pic/02.png "02")
 >
@@ -27,9 +27,9 @@ Description:
 ###Step3.
 >Clone my file [https://github.com/Tedtseng/LOL_multi-chat-Room.git](https://github.com/Tedtseng/LOL_multi-chat-Room.git)
 >
->Upload my folder named "LOL_multi-chat-Room " into your Github
+>Upload my folder named "LOL_multi-chat-Room " into your Github,
 >
->, and go to "Repositories" to choose the file you want to "clone to edit" 
+>and go to "Repositories" to choose the file you want to "clone to edit" 
 >
 >For example: if I choose "Final_Project", it will create a online IDE space for you to write code.
 >
