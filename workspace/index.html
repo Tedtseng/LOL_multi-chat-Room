@@ -1,0 +1,240 @@
+<!--UI & Client-Side-->
+<!--
+//<Send>:socket.emit
+//<Send>:io.emit(server-side)
+//<Receive>:socket.on
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>lol</title>
+  <!--<link rel="shortcut icon" href="http://findicons.com/files/icons/986/aeon/128/msn.png">-->
+  <link rel="shortcut icon" href=" http://img3.wikia.nocookie.net/__cb20130528235457/minecraftpocketedition/images/9/9e/LOLICON.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!---->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!---->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+  <style>
+    /*Chinese font*/
+    @import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+   
+    /*iphone6 and 6plus screen CSS*/
+    @media only screen and (max-device-width: 640px),
+    only screen and (max-device-width: 667px),
+    only screen and (max-width: 480px) {
+      body {
+        font-size: 10px;
+        background-color: lightgray;
+      }
+      /* Logo must not appear too large on mobile */
+      #img {
+         position: absolute;
+         margin-top: 20px;
+         height:auto !important;
+         /*width    : 33%;*/
+         width    : 10% !important;
+         /*max-width: 180px;*/
+         max-width: 40px !important;
+         margin: .8%;
+         z-index:1;
+      }
+      #img2 {
+         position: absolute;
+         top: 50%;
+         margin-top: 140px;
+         height:auto !important;
+         /*width    : 33%;*/
+         width    : 10% !important;
+         /*max-width: 180px;*/
+         max-width: 40px !important;
+         /*margin: 5%;*/
+         z-index:0;
+         
+         
+      }
+    } /*iphone6 and 6plus screen CSS_End*/
+    /**/
+    /*ipad2 screen*/
+    @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape),
+    {
+      body {
+        background-color: lightgray;
+      }
+    }
+    /*Website Screen*/
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      /*background-image: url("http://www.jkmcclung.com/files/2014/08/Old-Crumpled-Paper-Background-HD-Wallpaper-Desktop-1oqd4x4.jpg"), url("http://www.desktopwallpaperhd.net/wallpapers/0/7/pieces-hallway-paper-desktop-wallpaper-white-2951.jpg");*/
+      background-image: url("http://www.jkmcclung.com/files/2014/08/Old-Crumpled-Paper-Background-HD-Wallpaper-Desktop-1oqd4x4.jpg");
+      font-size: 16px;
+      font-family: 'Gloria Hallelujah', cursive,'cwTeXYen', sans-serif;
+      /*English + chinese font*/
+      
+    }
+    
+    .i0 {
+      left: .8%;
+      /*position: fixed;*/
+      bottom: 1;
+      position: absolute;
+      margin-top: 10px;
+    }
+    
+    .i1 {
+      left: .8%;
+      /*position: fixed;*/
+      bottom: 0;
+      position: absolute;
+      top: 50%;
+      margin-top: 215px;
+    }
+    
+    #m {
+      /*border: 2px solid gray;*/
+      padding: 10px;
+      width: 84%;
+      margin: .8%;
+      position: fixed;
+      bottom: 0;
+      left: 6%;
+      font-family: 'Gloria Hallelujah', cursive,'cwTeXYen', sans-serif;
+      font-size: 16px;
+    }
+    
+    #send {
+      width: 8%;
+      margin: .8%;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      right: 5px;
+      left: 90.5%;
+      font-family: 'Gloria Hallelujah', cursive,'cwTeXYen', sans-serif;
+    }
+    
+    .button-large {
+      font-size: 100%;
+      font-weight: bold;
+    }
+    
+    #message_block {
+      width: 90%;
+      position: absolute;
+      top: 0;
+      bottom: 5%;
+      margin-bottom: 21px;
+      border: solid 2px lightgray;
+      overflow: auto;
+      left: 6.9%;
+      right: 10%;
+    }
+    
+    #messages {
+      list-style-type: none;
+      margin: 10px;
+      padding: 0;
+    }
+    
+    #messages li {
+      padding: 5px 10px;
+      font-size: 16pt;
+    }
+    
+    #messages li:nth-child(odd) {
+      background: #eee;
+    }
+  </style>
+  
+  <!--Function code .JS-->
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <script>
+    var socket =io();
+    $(document).ready(function() {
+
+      //pop up dialog message,enter user name
+      var name = prompt("Pick Up Username", "Guest");
+      if (name == "" || name == null) {
+        name = "Guest";
+      }
+
+      //tell server,send message to app.js  
+      //socket.emit("add user",...)<client> ==> socket.on('add user',...)<Server>
+      socket.emit("add user", name);//<Send>
+
+      /*<Read>Get new messages or log/leave status from other clients*/
+      socket.on('chat message', function(data) {
+        appendMessage(data.username + ": " + data.msg);
+      });
+
+      socket.on('add user', function(data) {
+        appendMessage(data.username + " logged...");
+      });
+
+      socket.on('user left', function(data) {
+        appendMessage(data.username + " left...");
+      });
+
+      /*jQuery*/ 
+      $('#send').click(function() {
+        var text = $('#m').val();
+        socket.emit('chat message', text);
+        $('#m').val('');
+        return false;
+      });
+
+      $("#m").keydown(function(event) {
+        if (event.which == 13) {
+          $('#send').click();
+        }
+      });
+
+      function appendMessage(msg) {
+        $('#messages').append($('<li>').text(msg));
+        var message = document.getElementById("message_block");
+        message.scrollTop = message.scrollHeight;
+
+      }
+    });
+  </script>
+</head>
+<!--The UI of Chart Room-->
+<body>
+  <!--<img class="i0" src="http://findicons.com/files/icons/1733/msn_messenger_aqua/256/msn_aqua.png" alt="msn" width="65" height="65">-->
+  <img class="i0" id="img" src="http://24.media.tumblr.com/tumblr_mb6e1pKaaB1qgxp4io1_250.jpg" alt="msn" width="75" height="100" />
+  
+  <div  id="message_block"  >
+    <ul id="messages"></ul>
+  </div>
+
+  <div class="pure-form pure-g">
+    <!--<img class="i" src="http://www.iconarchive.com/download/i12487/gakuseisean/radium/MSN-Messenger.ico" alt="msn" width="75" height="75">-->
+    <img class="i1" id="img2" src="http://y3.ifengimg.com/54d2627fa284efb6/2013/0106/rdn_50e9273abc182.jpg" alt="msn" width="75" height="98" />
+    <!---->
+    <input class="pure-input-1" type="text" placeholder="I think..." id="m" autocomplete="off" />
+    <button class="button-large pure-button" id="send">Send</button>
+  </div>
+</body>
+</html>
